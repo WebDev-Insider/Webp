@@ -40,6 +40,8 @@ skillItems.forEach(skill => {
     skill.querySelector('.items').classList.toggle('show-items');
   })
 })
+
+
 /*==================== scroll reveal ====================*/
 ScrollReveal({ 
   //reset: true,
