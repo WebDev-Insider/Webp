@@ -16,6 +16,7 @@
   --second-bg-color: #323946;
   --text-color: #fff;
   --main-color: #0ef;
+  --transition: all 300ms ease;
 }
 
 *::selection {
@@ -198,6 +199,7 @@ span {
 
 .services h2{
   margin-bottom: 5rem;
+  
 }
 
 .services-container {
@@ -206,6 +208,7 @@ span {
   align-items: center;
   flex-wrap: wrap;
   gap: 2rem;
+  
 }
 
 .services-container .services-box {
@@ -312,7 +315,104 @@ span {
   font-size: 2rem;
   color: var(--second-bg-color);
 }
+/*skills section***/
 
+section.skills .container{
+   width: 100%;
+   background: var(--bg-color);
+
+}
+section.skills .container .skill{
+  margin-bottom: 1rem;
+}
+section.skills .skill .head{
+  background: var(--main-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--text-color);
+  padding: 1.6rem;
+  cursor: pointer;
+}
+section.skills .skill .head h4{
+  color: var(--text-color);
+}
+section.skills .skill .head .left{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+section.skills .skill .items{
+  display: none;
+}
+section.skills .container .skill .items.show-items{
+  display: block;
+}
+section.skills .skill .item{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 1rem;
+  padding: 1.6rem;
+  background: var(--second-bg-color);
+  margin-bottom: 0.3rem;
+  transition: var(--transition);
+}
+section.skills .skill .item:hover{
+  background: darkcyan;
+}
+section.skills .skill .progress-area{
+ width: 100%;
+ display: flex;
+ align-items: center;
+ gap:1rem;
+}
+section.skills .skill .progress-bar{
+  width: 100%;
+  height: 1rem;
+  background: var(--bg-color);
+}
+section.skills .skill .progress-bar .progress{
+  height: 100%;
+  width: 92%;
+  background: var(--main-color);
+}
+section.skills .skill .item:nth-child(2) .progress-bar .progress{
+  width: 80%;
+}
+section.skills .skill .item:nth-child(3) .progress-bar .progress{
+  width: 70%;
+}
+section.skills .skill .item:nth-child(4) .progress-bar .progress{
+  width: 65%;
+}
+section.skills .skill .progress-bar .progress1{
+  height: 100%;
+  width: 2%;
+  background: var(--main-color);
+}
+section.skills .skill .item:nth-child(2) .progress-bar .progress1{
+  width: 8%;
+}
+section.skills .skill .item:nth-child(3) .progress-bar .progress1{
+  width: 5%;
+}
+
+.left i {
+  color: var(--second-bg-color);
+  font-size: 3rem;
+}
+cl{
+  color: var(--second-bg-color);
+  font-size: 3rem;
+}
+.left h4 {
+  font-size: 1.6rem;
+}
+.item h5 {
+  font-size: 1.2rem;
+}
+/*end of skills*/
 .contact h2{
   margin-bottom: 3rem;
 }
@@ -417,7 +517,10 @@ span {
     padding: 2rem 3%;
   }
 }
-
+/*skills*/
+section.skills .container{
+  width: 100%;
+}
 @media (max-width: 768px){
     #menu-icon{
       display: block;

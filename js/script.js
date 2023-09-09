@@ -32,7 +32,14 @@ window.onscroll = () => {
   menuIcon.classList.remove('bx-x');
   navbar.classList.remove('active');
 };
+/*======================show/hide skills=================*/
+const skillItems = document.querySelectorAll('section.skills .skill');
 
+skillItems.forEach(skill => {
+  skill.querySelector('.head').addEventListener('click', () => {
+    skill.querySelector('.items').classList.toggle('show-items');
+  })
+})
 /*==================== scroll reveal ====================*/
 ScrollReveal({ 
   //reset: true,
@@ -55,3 +62,12 @@ const typed = new Typed('.multiple-text', {
   backDelay: 1000,
   loop: true
 })
+
+
+
+
+
+
+
+
+

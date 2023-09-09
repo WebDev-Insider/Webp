@@ -26,6 +26,7 @@
         <nav class="navbar">
          <a href="#home" class="active">Home</a>
          <a href="#portfolio">Portfolio</a>
+         <a href="#skills">Skills</a> 
          <a href="#services">Services</a>
          <a href="#about">About</a>
          <a href="#contact">Contact</a> 
@@ -52,7 +53,7 @@
 </section>
     <!-- portfolio section design -->
     <section class="portfolio" id="portfolio">
-      <h2 class="heading">Lastest <span>Project</span>
+      <h2 class="heading">Latest <span>Project</span>
       </h2>
 
       <div class="portfolio-container">
@@ -111,6 +112,131 @@
        </div>
       </div>
     </section>
+    <!--skills-->
+<section class="skills" id="skills">
+  <h2 class="heading">My <span>Skills</span></h2>
+  <div class="container">
+    <!--start-->
+    <div class="skill">
+  <div class="head">
+    <div class="left">
+      <i class='bx bx-code-block'></i> 
+         <h4>Frontend Development</h4>
+    </div>
+    <i class='bx bx-chevrons-down' style="font-size: 2rem;"></i> 
+   </div>
+   <div class="items">
+    <div class="item">
+      <h5>HTML</h5>
+      <div class="progress-area">
+        <div class="progress-bar">
+          <div class="progress"></div>
+        </div>
+        <h5>92%</h5>
+      </div>
+    </div>
+    <!--end of items-->
+    <div class="item">
+      <h5>CSS</h5>
+      <div class="progress-area">
+        <div class="progress-bar">
+          <div class="progress"></div>
+        </div>
+        <h5>80%</h5>
+      </div>
+    </div>
+    <!--end of items-->
+    <div class="item">
+      <h5>JavaScript</h5>
+      <div class="progress-area">
+        <div class="progress-bar">
+          <div class="progress"></div>
+        </div>
+        <h5>70%</h5>
+      </div>
+    </div>
+    <!--end of items-->
+     <!--end of items-->
+     <div class="item">
+      <h5>React</h5>
+      <div class="progress-area">
+        <div class="progress-bar">
+          <div class="progress"></div>
+        </div>
+        <h5>65%</h5>
+      </div>
+    </div>
+   </div>
+    </div>
+    <!--ens of skill-->
+    <div class="skill">
+      <div class="head">
+        <div class="left">
+          <i class='bx bxl-microsoft-teams'></i>   
+             <h4>UI/UX Design</h4>
+        </div>
+        <i class='bx bx-chevrons-down' style="font-size: 2rem;"></i> 
+       </div>
+       <div class="items">
+        <div class="item">
+          <h5>figma</h5>
+          <div class="progress-area">
+            <div class="progress-bar">
+              <div class="progress1"></div>
+            </div>
+            <h5>92%</h5>
+          </div>
+        </div>
+        <!--end of items-->
+        <div class="item">
+          <h5>figma</h5>
+          <div class="progress-area">
+            <div class="progress-bar">
+              <div class="progress1"></div>
+            </div>
+            <h5>92%</h5>
+          </div>
+        </div>
+        <!--end of items-->
+        <div class="item">
+          <h5>figma</h5>
+          <div class="progress-area">
+            <div class="progress-bar">
+              <div class="progress"></div>
+            </div>
+            <h5>92%</h5>
+          </div>
+        </div>
+        <!--end of items-->
+       </div>
+        </div>
+        <!--ens of skill-->
+        <div class="skill">
+          <div class="head">
+            <div class="left">
+              <i class='bx bx-desktop'></i> 
+                 <h4>CMS</h4>
+            </div>
+            <i class='bx bx-expand-vertical' style="font-size: 2rem;"></i> 
+           </div>
+           <div class="items">
+            <div class="item">
+              <h5>Wix</h5>
+              <div class="progress-area">
+                <div class="progress-bar">
+                  <div class="progress"></div>
+                </div>
+                <h5>92%</h5>
+              </div>
+            </div>
+            <!--end of items-->
+            
+           </div>
+            </div>
+            <!--ens of skill-->
+  </div>
+</section>
+
     <!-- services section design -->
 <section class="services" id="services">
   <h2 class="heading">My <span>Services</span></h2>
@@ -154,19 +280,19 @@
 <section class="contact" id="contact">
   <h2 class="heading">Contact <span>Me!</span></h2>
 
-  <form name="contact" method="POST" data-netlify="true">
+  <form name="contact" method="POST" form action="https://formspree.io/f/mdorzvzl">
     <div class="input-box">
-     <input type="text" name="name" placeholder="Enter Your Name..."/></label>
+     <input type="text" name="name" placeholder="Enter Your Name..." required/></label>
+     
+
+      <input type="email" name="email" placeholder="Enter Your Email Address..."required/></label>
      
     
-      <input type="email" name="email" placeholder="Enter Your Email Address..."/></label>
-     
     
-    
-        <textarea name="message" cols="30" row="10" placeholder="Enter Your Message.."></textarea></label>
+        <textarea name="message" cols="30" row="10" placeholder="Enter Your Message.."required></textarea></label>
     </div>
       <p>
-        <button type="submit" class="btn">Send Message</button>
+        <button type="submit" class="btn" value="submit">Send Message</button>
       </p>
     </form>
     
