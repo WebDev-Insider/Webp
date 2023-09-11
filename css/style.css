@@ -397,6 +397,14 @@ section.skills .skill .item:nth-child(2) .progress-bar .progress1{
 section.skills .skill .item:nth-child(3) .progress-bar .progress1{
   width: 5%;
 }
+section.skills .skill .progress-bar .progress2{
+  height: 100%;
+  width: 92%;
+  background: var(--main-color);
+}
+section.skills .skill .item:nth-child(2) .progress-bar .progress2{
+  width: 80%;
+}
 
 .left i {
   color: var(--second-bg-color);
